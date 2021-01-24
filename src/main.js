@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import Head from './components/Head'
+Vue.component('head-view', Head);
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
