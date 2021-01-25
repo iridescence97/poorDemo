@@ -1,14 +1,17 @@
 <template>
   <div id="second-nav">
     <div class="nav-group">
-      <router-link to="/updatelog" class="common-nav-item" :class="navActive"> 更新日志 </router-link>
+      <router-link to="updatelog" class="common-nav-item" :class="navActive">
+        更新日志
+      </router-link>
       <router-link
+        :class="navActive==item.url?'common-nav-item-active':''"
         class="common-nav-item"
-        :to="item.url"
+        :to="item.path"
         v-for="(item, i) in navList"
         :key="i"
-        >{{ item.name }}</router-link
-      >
+        >{{ item.name }}
+      </router-link>
     </div>
   </div>
 </template>
@@ -20,20 +23,29 @@ export default {
       navList: [
         {
           name: "Banner 轮播图",
-          url: "/Banner",
+          path: "/Banner",
         },
         {
           name: "Form 表单",
-          url: "/Form",
+          path: "/Form",
+        },
+        {
+          name: "Tabbar 导航栏",
+          path: "/Tabbar",
+        },
+        {
+          name: "Table 表格",
+          path: "/Table",
         },
       ],
-      navActive:''
+      navActive: "",
     };
   },
   watch: {
     $route: {
       handler(newRouter) {
         this.navActive = newRouter.name;
+        console.log(this.navActive);
       },
     },
   },
