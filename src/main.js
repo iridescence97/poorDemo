@@ -4,8 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import Head from './components/Head'
-Vue.component('head-view', Head);
+import Head from './views/module/head'
+import Nav from './views/module/nav'
+Vue.component('my-header', Head);
+Vue.component('my-nav',Nav)
+
 
 Vue.config.productionTip = false
 

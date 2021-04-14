@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <head-view></head-view>
+    <my-header></my-header>
     <router-view></router-view>
   </div>
 </template>
@@ -16,23 +16,14 @@ export default {
 
 <style>
 #app {
-  width: 1140px;
-  font-family: "PingFang SC Regular";
-  text-align: center;
-  color: #444;
+  width: 100%;
+  font-family: 'LangYuanTi';
+  color: #2D2D2D;
+  font-size: 14px;
+  line-height: 1;
+  text-shadow: #fff 1px 0 0, #fff 0 1px 0, #fff -1px 0 0, #fff 0 -1px 0;
 }
-* {
-  margin: 0 auto;
-  padding: 0;
-}
-a,
-a:link,
-a:hover,
-a:active {
-  text-decoration: none;
-  color: #2c3e50;
-}
-img {
-  display: block;
+.size-active{
+  text-shadow: #C8A878 1px 0 0, #C8A878 0 1px 0, #C8A878 -1px 0 0, #C8A878 0 -1px 0;
 }
 </style>

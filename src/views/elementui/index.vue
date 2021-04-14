@@ -1,6 +1,6 @@
 <template>
-    <div id="guide">
-        指南页
+    <div id="elementui">
+        elementui
     </div>
 </template>
 

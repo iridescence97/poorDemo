@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Nav from "@/components/Nav";
+import Nav from "@/views/module/nav";
 export default {
   data() {
     return {};

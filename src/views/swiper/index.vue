@@ -1,6 +1,6 @@
 <template>
-    <div id="resource">
-        资源页
+    <div id="swiper">
+        swiper
     </div>
 </template>
 
